@@ -40,13 +40,13 @@ const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="faq" className="py-24 border-t border-white/5">
+      <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Frequently Asked <span className="text-gradient">Questions</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            Frequently Asked <span className="text-white/40">Questions</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base text-white/50 max-w-2xl mx-auto font-light">
             Everything you need to know about Allura Tech
           </p>
         </div>
@@ -57,12 +57,12 @@ const FAQ = () => {
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="glass-effect px-6 rounded-xl border-0"
+                className="bg-white/[0.02] border border-white/10 px-6 rounded-xl data-[state=open]:bg-white/[0.04]"
               >
-                <AccordionTrigger className="text-left hover:no-underline py-6">
-                  <span className="font-semibold text-lg">{faq.question}</span>
+                <AccordionTrigger className="text-left hover:no-underline py-5">
+                  <span className="font-semibold text-base text-white">{faq.question}</span>
                 </AccordionTrigger>
-                <AccordionContent className="text-muted-foreground pb-6">
+                <AccordionContent className="text-white/50 pb-5 text-sm leading-relaxed">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

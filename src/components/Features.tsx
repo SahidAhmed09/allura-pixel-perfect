@@ -54,29 +54,29 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-20">
-      <div className="container mx-auto px-4">
+    <section id="features" className="py-24 border-t border-white/5">
+      <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            All Features <span className="text-gradient">In One Place</span>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
+            All Features <span className="text-white/40">In One Place</span>
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+          <p className="text-base text-white/50 max-w-2xl mx-auto font-light">
             Everything you need to automate, scale, and succeed
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="glass-effect p-6 rounded-xl hover:bg-glass/60 transition-all duration-300 group"
+              className="bg-white/[0.02] border border-white/10 p-6 rounded-xl hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300 group"
             >
               <div className="flex flex-col items-center text-center">
-                <div className="w-14 h-14 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                  <feature.icon className="text-primary" size={24} />
+                <div className="w-12 h-12 bg-white/5 border border-white/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-white/10 transition-colors">
+                  <feature.icon className="text-white" size={20} />
                 </div>
-                <h3 className="text-lg font-semibold mb-2">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground">
+                <h3 className="text-base font-semibold mb-2 text-white">{feature.title}</h3>
+                <p className="text-xs text-white/50 leading-relaxed">
                   {feature.description}
                 </p>
               </div>

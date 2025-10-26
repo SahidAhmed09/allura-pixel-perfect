@@ -224,11 +224,11 @@ const Services = () => {
           </div>
           
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-            Smarter Services, <span className="text-white/40 italic">Built with AI</span>
+            Our <span className="text-white/40">Services</span>
           </h2>
           
           <p className="text-base text-white/50 max-w-xl mx-auto font-light">
-            Everything you need to automate operations, boost productivity.
+            AI automation, web development, and mobile apps — all under one roof
           </p>
         </div>
 
@@ -236,7 +236,7 @@ const Services = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {/* Top row - 2 cards */}
           <div className="lg:col-span-1">
-            <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300 h-full">
+            <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 transition-all duration-500 hover:bg-white/[0.06] hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] cursor-pointer h-full">
               <div className="h-48 mb-6 flex items-center justify-center">
                 {services[0].illustration}
               </div>
@@ -246,7 +246,7 @@ const Services = () => {
           </div>
           
           <div className="lg:col-span-1">
-            <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300 h-full">
+            <div className="bg-white/[0.02] border border-white/10 rounded-2xl p-8 transition-all duration-500 hover:bg-white/[0.06] hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] cursor-pointer h-full">
               <div className="h-48 mb-6 flex items-center justify-center">
                 {services[1].illustration}
               </div>
@@ -261,7 +261,7 @@ const Services = () => {
               {services.slice(2).map((service, index) => (
                 <div
                   key={index + 2}
-                  className="bg-white/[0.02] border border-white/10 rounded-2xl p-6 hover:bg-white/[0.04] hover:border-white/20 transition-all duration-300"
+                  className="bg-white/[0.02] border border-white/10 rounded-2xl p-6 transition-all duration-500 hover:bg-white/[0.06] hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] cursor-pointer"
                 >
                   <div className="h-40 mb-6 flex items-center justify-center">
                     {service.illustration}

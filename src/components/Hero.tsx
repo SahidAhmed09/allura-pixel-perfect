@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -14,38 +14,33 @@ const Hero = () => {
           <div className="inline-flex items-center gap-2 bg-white/5 border border-white/10 px-5 py-2 rounded-full mb-8 backdrop-blur-md">
             <span className="h-1.5 w-1.5 rounded-full bg-white/70" />
             <span className="text-[11px] tracking-[0.2em] uppercase text-white/70">
-              New Gen AI Automation Partner
+              AI Automation • Web • App Development
             </span>
           </div>
 
           {/* Main Heading */}
           <h1 className="mb-6 leading-[1.05] tracking-tight">
             <span className="block text-[40px] md:text-[64px] lg:text-[86px] font-extrabold text-white/90">
-              Automate Smarter, Grow
+              Transform Ideas Into
             </span>
             <span className="block text-[40px] md:text-[64px] lg:text-[86px] font-extrabold text-white/90">
-              Faster.
+              Digital Reality.
               <span className="ml-3 font-serif italic font-normal text-white/70">
-                With AI
+                Faster
               </span>
             </span>
           </h1>
 
           {/* Subheading */}
           <p className="text-[15px] md:text-[17px] text-white/60 max-w-2xl mx-auto leading-relaxed mb-10">
-            AI automation helps modern businesses save time, reduce errors, and
-            improve productivity by handling repetitive tasks with ease.
+            We build intelligent automation, stunning web experiences, and powerful mobile apps that drive real business growth.
           </p>
 
           {/* CTA */}
-          <div className="flex items-center justify-center gap-3 mb-16">
-            <Button variant="hero" size="lg" className="rounded-full px-6 py-5 text-[15px]">
+          <div className="flex items-center justify-center mb-16">
+            <Button variant="hero" size="lg" className="rounded-full px-8 py-6 text-[15px] font-semibold">
               Book A Free Call
               <ArrowRight className="ml-2 transition-transform group-hover:translate-x-0.5" size={16} />
-            </Button>
-            <Button variant="glass" size="lg" className="rounded-full px-5 py-5 text-[15px]">
-              <Play className="mr-2" size={14} />
-              Watch Demo
             </Button>
           </div>
 

@@ -111,7 +111,7 @@ const WhyChooseUs = () => {
           </h2>
           
           <p className="text-base text-white/50 max-w-xl mx-auto font-light">
-            Everything you need to automate, optimize, and scale.
+            Full-stack expertise in AI automation, web, and mobile development
           </p>
         </div>
 

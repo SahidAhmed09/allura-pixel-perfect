@@ -74,7 +74,7 @@ const Pricing = () => {
                 plan.popular
                   ? "border-white/30 shadow-[0_0_50px_rgba(255,255,255,0.05)]"
                   : "border-white/10"
-              } rounded-2xl p-8 hover:bg-white/[0.04] transition-all duration-300`}
+              } rounded-2xl p-8 transition-all duration-500 hover:bg-white/[0.06] hover:scale-105 hover:shadow-[0_0_40px_rgba(255,255,255,0.08)] cursor-pointer`}
             >
               {plan.popular && (
                 <div className="absolute -top-3 left-1/2 -translate-x-1/2">

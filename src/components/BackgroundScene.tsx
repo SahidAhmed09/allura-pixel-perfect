@@ -40,14 +40,14 @@ const RotatingGlobe = () => {
 
   return (
     <group>
-      <Points ref={ref} positions={positions}>
+        <Points ref={ref} positions={positions}>
         <PointMaterial
           transparent
           color="#ffffff"
           size={0.02}
           sizeAttenuation
           depthWrite={false}
-          opacity={0.6}
+          opacity={0.9}
         />
       </Points>
     </group>
@@ -68,8 +68,8 @@ const BackgroundScene = () => {
         >
           <fog attach="fog" args={["#050505", 5, 12]} />
           <color attach="background" args={["#050505"]} />
-          <ambientLight intensity={0.25} />
-          <pointLight position={[5, 5, 5]} intensity={0.8} color="#ffffff" />
+          <ambientLight intensity={0.5} />
+          <pointLight position={[5, 5, 5]} intensity={1.5} color="#ffffff" />
 
           {/* 3D Star field */}
           <DreiStars
@@ -79,7 +79,7 @@ const BackgroundScene = () => {
             factor={3}
             saturation={0}
             fade
-            speed={0.2}
+            speed={0.5}
           />
 
           <RotatingGlobe />
@@ -111,7 +111,7 @@ const BackgroundScene = () => {
           transform: translateX(-50%);
           width: 1800px;
           height: 1800px;
-          opacity: 0.35;
+          opacity: 0.6;
           pointer-events: none;
         }
 
@@ -119,7 +119,7 @@ const BackgroundScene = () => {
           canvas {
             width: 1400px;
             height: 1400px;
-            opacity: 0.3;
+            opacity: 0.5;
           }
         }
 
@@ -127,7 +127,7 @@ const BackgroundScene = () => {
           canvas {
             width: 1000px;
             height: 1000px;
-            opacity: 0.25;
+            opacity: 0.45;
           }
         }
       `}</style>

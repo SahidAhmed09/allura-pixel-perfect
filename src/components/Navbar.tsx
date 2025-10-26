@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/allura-logo.png";
 
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -39,11 +40,8 @@ const Navbar = () => {
         >
           <div className="flex items-center justify-between px-6 py-3">
             {/* Logo */}
-            <a href="#home" className="flex items-center space-x-2.5 group">
-              <div className="w-7 h-7 bg-white rounded-md transition-transform group-hover:rotate-12"></div>
-              <span className="text-base font-semibold text-white tracking-tight">
-                Allura Tech
-              </span>
+            <a href="#home" className="flex items-center">
+              <img src={logo} alt="Allura Tech" className="h-8 w-auto" />
             </a>
 
             {/* Desktop Navigation */}

@@ -10,8 +10,7 @@ const CTA = () => {
             Ready to Automate <span className="text-white/40">Smarter?</span>
           </h2>
           <p className="text-base text-white/50 mb-8 max-w-2xl mx-auto font-light">
-            Join thousands of businesses already transforming their operations
-            with Allura Tech. Start your free trial today.
+            Let's discuss how we can transform your ideas into powerful digital solutions
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
             <Button variant="hero" size="lg" className="rounded-full group">

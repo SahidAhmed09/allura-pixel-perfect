@@ -97,3 +97,50 @@
     text-shadow: 0 0 20px hsl(0 0% 100% / 0.3);
   }
 }
+
+/* Animated dotted globe */
+.globe-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  perspective: 900px;
+  -webkit-perspective: 900px;
+  pointer-events: none;
+  transform: translateZ(0);
+  animation: globe-rotate 30s linear infinite;
+  will-change: transform, opacity;
+  opacity: 0.95;
+}
+
+.globe-svg{
+  width: 1200px;
+  height: 600px;
+  transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  filter: drop-shadow(0 30px 40px rgba(0,0,0,0.6));
+  animation: globe-float 6s ease-in-out infinite;
+  will-change: transform, opacity;
+  user-select: none;
+}
+
+/* slow Y-axis spin */
+@keyframes globe-rotate {
+  from { transform: rotateY(0deg); }
+  to   { transform: rotateY(-360deg); }
+}
+
+/* subtle vertical float */
+@keyframes globe-float {
+  0%,100% { transform: translateY(0); }
+  50%     { transform: translateY(-10px); }
+}
+
+@media (max-width: 1024px){
+  .globe-svg { width: 1000px; height: 500px; opacity: 0.9; }
+  .globe-wrap { animation-duration: 40s; }
+}
+
+@media (max-width: 640px){
+  .globe-svg { width: 700px; height: 420px; opacity: 0.8; }
+  .globe-wrap { animation-duration: 50s; }
+}

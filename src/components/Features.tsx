@@ -1,4 +1,5 @@
 import React from "react";
+import Stars from "@/components/Stars";
 
 const Features = () => {
   const features = [
@@ -83,6 +84,8 @@ const Features = () => {
 
   return (
     <section id="features" className="py-24 border-t border-white/5 relative overflow-hidden">
+      {/* stars background */}
+      <Stars />
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Header Section */}
         <div className="text-center mb-16">

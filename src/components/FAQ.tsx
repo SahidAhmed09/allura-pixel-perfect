@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Stars from "@/components/Stars";
 
 const FAQ = () => {
   const faqs = [
@@ -41,6 +42,8 @@ const FAQ = () => {
 
   return (
     <section id="faq" className="py-24 border-t border-white/5">
+      {/* stars background */}
+      <Stars />
       <div className="container mx-auto px-6 max-w-7xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">

@@ -1,4 +1,5 @@
 import { Star } from "lucide-react";
+import Stars from "@/components/Stars";
 
 const WhyChooseUs = () => {
   const benefits = [
@@ -98,6 +99,8 @@ const WhyChooseUs = () => {
 
   return (
     <section className="py-24 relative overflow-hidden border-t border-white/5">
+      {/* stars background */}
+      <Stars />
       <div className="container mx-auto px-6 max-w-6xl">
         {/* Header */}
         <div className="text-center mb-16">

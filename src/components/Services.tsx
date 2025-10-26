@@ -1,4 +1,5 @@
 import React from "react";
+import Stars from "@/components/Stars";
 
 const Services = () => {
   const services = [
@@ -215,6 +216,8 @@ const Services = () => {
 
   return (
     <section id="services" className="py-24 relative border-t border-white/5">
+      {/* stars background */}
+      <Stars />
       <div className="container mx-auto px-6 max-w-7xl">
         {/* Header Section */}
         <div className="text-center mb-16">

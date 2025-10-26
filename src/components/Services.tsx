@@ -1,5 +1,4 @@
 import React from "react";
-import Stars from "@/components/Stars";
 
 const Services = () => {
   const services = [
@@ -215,10 +214,8 @@ const Services = () => {
   ];
 
   return (
-    <section id="services" className="py-24 relative border-t border-white/5">
-      {/* stars background */}
-      <Stars />
-      <div className="container mx-auto px-6 max-w-7xl">
+    <section id="services" className="relative py-24 overflow-hidden">
+      <div className="container mx-auto px-6 max-w-7xl relative z-10">
         {/* Header Section */}
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-white/[0.03] border border-white/10 px-4 py-1.5 rounded-full mb-8 backdrop-blur-sm">

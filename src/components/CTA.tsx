@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section className="py-24 relative overflow-hidden border-t border-white/5">
+    <section className="relative py-24 overflow-hidden">
       <div className="container relative z-10 mx-auto px-6 max-w-7xl">
         <div className="max-w-4xl mx-auto text-center bg-white/[0.02] border border-white/10 p-12 md:p-16 rounded-3xl">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">

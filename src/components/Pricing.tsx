@@ -39,7 +39,7 @@ const Pricing = () => {
     },
     {
       name: "Custom",
-      price: "Lets have a call",
+      price: "Contact Us",
       period: "",
       description: "Enterprise solutions tailored to you",
       features: [

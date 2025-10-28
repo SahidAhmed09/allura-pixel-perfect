@@ -5,50 +5,52 @@ const Pricing = () => {
   const plans = [
     {
       name: "Starter",
-      price: "$50",
+      price: "$100",
       period: "/month",
       description: "Perfect for small teams getting started",
       features: [
-        "Up to 10 team members",
+        "Up to 5 Webpages",
+        "Up to 5GB of Shared Storage",
         "Basic automation workflows",
-        "5GB storage",
-        "Email support",
-        "Basic analytics",
-        "Mobile app access",
+        "Email Support",
+        "Free Domain",
+        "WhatsApp and call integration",
+        "Basic Analytics",
+        "Basic mobile application",
       ],
       popular: false,
     },
     {
       name: "Professional",
-      price: "$80",
+      price: "$200",
       period: "/month",
       description: "For growing businesses that need more",
       features: [
-        "Up to 50 team members",
-        "Advanced automation",
-        "50GB storage",
-        "Priority support 24/7",
+        "Up to 20 webpages",
+        "Up to 15GB of Storage",
+        "Advanced Automation",
+        "Priority Support 24/7",
         "Advanced analytics",
-        "API access",
-        "Custom integrations",
+        "Access to all the APIs",
         "White-label options",
+        "Included Starter plan features",
       ],
       popular: true,
     },
     {
       name: "Custom",
-      price: "Let's Talk",
+      price: "Lets have a demo call",
       period: "",
       description: "Enterprise solutions tailored to you",
       features: [
-        "Unlimited team members",
-        "Custom workflows",
-        "Unlimited storage",
-        "Dedicated account manager",
+        "Unlimited Storage",
+        "Cstom Automation",
+        "Custom Workflows",
         "Custom analytics",
-        "SLA guarantees",
-        "On-premise deployment",
+        "On premise deployment",
         "Advanced security",
+        "Unlimited Bug Fixes",
+        "Includes Professional Plan features",
       ],
       popular: false,
     },
@@ -104,7 +106,7 @@ const Pricing = () => {
                   className="w-full rounded-full"
                   size="default"
                 >
-                  {plan.price === "Let's Talk" ? "Contact Sales" : "Get Started"}
+                  {plan.period === "" ? "Contact Sales" : "Get Started"}
                 </Button>
               </div>
 

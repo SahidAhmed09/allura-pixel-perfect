@@ -38,10 +38,12 @@ const Hero = () => {
 
           {/* CTA */}
           <div className="flex items-center justify-center mb-16">
-            <Button variant="hero" size="lg" className="rounded-full px-8 py-6 text-[15px] font-semibold">
-              Book A Free Call
-              <ArrowRight className="ml-2 transition-transform group-hover:translate-x-0.5" size={16} />
-            </Button>
+            <a href="https://wa.me/916900273892" target="_blank" rel="noopener noreferrer">
+              <Button variant="hero" size="lg" className="rounded-full px-8 py-6 text-[15px] font-semibold group">
+                Book A Discovery Call
+                <ArrowRight className="ml-2 transition-transform group-hover:translate-x-0.5" size={16} />
+              </Button>
+            </a>
           </div>
 
           {/* Social strip */}

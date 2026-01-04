@@ -8,34 +8,29 @@ import {
 const FAQ = () => {
   const faqs = [
     {
-      question: "How quickly can I get started?",
+      question: "What services does Allura Tech offer?",
       answer:
-        "You can get started in minutes! Simply sign up, and our intuitive onboarding process will guide you through setting up your first automation. Most customers are fully operational within 24 hours.",
+        "We provide AI automation, custom web development, mobile app development, and AI strategy consulting. Our full-stack expertise allows us to deliver complete digital solutions tailored to your business needs.",
     },
     {
-      question: "What integrations do you support?",
+      question: "How do we get started working together?",
       answer:
-        "We support over 1,000+ integrations including popular tools like Slack, Google Workspace, Salesforce, HubSpot, and many more. Our API also allows for custom integrations with any system.",
+        "Simply book a discovery call with us! We'll discuss your project requirements, understand your goals, and create a customized proposal. There's no commitment required for the initial consultation.",
     },
     {
-      question: "Is my data secure?",
+      question: "How long does a typical project take?",
       answer:
-        "Absolutely. We use bank-grade encryption (AES-256) for data at rest and in transit. We're SOC 2 Type II certified and fully GDPR compliant. Your data security is our top priority.",
+        "Project timelines vary based on complexity. A simple website might take 2-4 weeks, while a full mobile app or complex automation system could take 2-3 months. We'll provide a detailed timeline after understanding your requirements.",
     },
     {
-      question: "Can I cancel my subscription anytime?",
+      question: "Do you provide ongoing support after project completion?",
       answer:
-        "Yes, you can cancel your subscription at any time with no penalties or hidden fees. We believe in earning your business every month. Your data remains accessible for 90 days after cancellation.",
+        "Yes! We offer maintenance and support packages to ensure your solution continues to perform optimally. This includes updates, bug fixes, and feature enhancements as your business grows.",
     },
     {
-      question: "Do you offer training and support?",
+      question: "What makes Allura Tech different from other agencies?",
       answer:
-        "Yes! All plans include comprehensive documentation, video tutorials, and email support. Professional and Custom plans include priority 24/7 support and dedicated account managers.",
-    },
-    {
-      question: "What makes Allura Tech different?",
-      answer:
-        "We combine powerful automation with simplicity. Unlike complex enterprise tools, our platform is designed for real businesses. You get enterprise-grade features without the enterprise complexity or cost.",
+        "We combine expertise in AI, web, and mobile development under one roof. This means seamless integration across all your digital touchpoints and a single team that truly understands your entire tech ecosystem.",
     },
   ];
 
@@ -47,7 +42,7 @@ const FAQ = () => {
             Frequently Asked <span className="text-white/40">Questions</span>
           </h2>
           <p className="text-base text-white/50 max-w-2xl mx-auto font-light">
-            Everything you need to know about Allura Tech
+            Everything you need to know about working with us
           </p>
         </div>
 
